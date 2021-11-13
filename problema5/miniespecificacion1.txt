@@ -46,3 +46,4 @@ gastados en el mes y el costo de cada minuto.
 27. Fin si
 
 28. <<"El valor total a pagar mensual de servicios básicos es": + valorTotal
+29. Fin
