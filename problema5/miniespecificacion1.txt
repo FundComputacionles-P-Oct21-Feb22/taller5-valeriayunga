@@ -1,0 +1,48 @@
+Problema 5
+Se debe generar un algoritmo y miniespecificación que permita calcular
+y mostrar el valor total a pagar mensual de servicios básicos de una persona.
+Los servicios básicos son: agua, telefono. 
+Si la persona es menor a 20 años se descuenta el 20% del total mensual. 
+Para calcular el costo mensual a pagar el agua, se debe ingresar el número 
+de litros de agua consumidos en el mes y el costo de cada litro de agua. 
+Para calcular el costo del teléfono, se debe ingresar el número de minutos 
+gastados en el mes y el costo de cada minuto.
+
+1. Inicio
+
+2. numero_litros, d [0, n]
+3. costo_litros, d [0, n]
+4. numero_minutos, d [0, n]
+5. costo_minutos, d [0, n]
+6. edad, i [0, n]
+7. descuento, d [0, n]
+8. porcentaje, d [0, n] <--20
+9. subtotal, d [0, n]
+10. valorTotal, d [0, n]
+
+11.<<"Ingrese el número de litros de agua consumidos en el mes"
+12.>> numero_litros
+
+13.<<"Ingrese el costo de cada litro de agua"
+14.>> costo_litros
+
+15.<<"Ingrese el número de minutos gastados en el mes"
+16.>>numero_minutos
+
+17.<<"Ingrese el costo de cada minuto"
+18.>>costo_minutos
+
+19.<<"Ingrese la edad del usuario"
+20.>>edad
+
+21. subtotal <-- (numero_litros * costo_litros) + (numero_minutos * costo minutos)
+
+22. Si edad < 20 entonces
+23.	descuento <-- (porcentaje * subtotal) / 100
+24. 	valorTotal <-- subtotal - descuento
+
+25. De lo contrario
+26. 	valorTotal <-- subtotal
+27. Fin si
+
+28. <<"El valor total a pagar mensual de servicios básicos es": + valorTotal
